@@ -5,7 +5,7 @@ import store from './store'
 import fastclick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
-// import 'swiper/dist/css/swiper.css'
+import 'swiper/dist/css/swiper.css'
 import 'style/base/reset.css'
 import 'style/iconfont/iconfont.js'
 

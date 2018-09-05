@@ -5,7 +5,12 @@
         <img src="~assets/pic/logo.png" alt="">
       </a>
       <div class="nav-serach">
-        <span>搜索商品, 共13300款好物</span>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-sousuo"></use>
+        </svg>
+        <span>
+          搜索商品, 共13300款好物
+        </span>
       </div>
     </div>
     <nav-slider></nav-slider>
@@ -24,18 +29,24 @@ export default {
 
 <style lang="stylus" scoped>
 .home-nav
+  position relative
   background-color #fff
+  &::after
+    content ''
+    position absolute
+    width 100%
+    height 1px
+    bottom 0
+    background-color #d9d9d9
   .home-nav-head
     display flex
     align-items center
     padding 10px 15px
-
     .home-logo
       margin-right 10px
       img
         width 70px
         height 20px
-
     .nav-serach
       display flex
       align-items center
@@ -45,4 +56,6 @@ export default {
       font-size 16px
       background-color #ededed
       border-radius 4px
+      span
+        margin-left 5px
 </style>

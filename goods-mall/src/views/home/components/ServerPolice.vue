@@ -1,9 +1,24 @@
 <template>
-  <div class="home-server-police">
+  <div class="home-server-police module-botton-style">
     <ul class="police-group">
-      <li class="police-item"><a href="">网易自营品牌</a></li>
-      <li class="police-item"><a href="">30天无忧退货</a></li>
-      <li class="police-item"><a href="">48小时快速退款</a></li>
+      <li class="police-item">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-right-1"></use>
+        </svg>
+        <a href="">网易自营品牌</a>
+      </li>
+      <li class="police-item">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-right-1"></use>
+        </svg>
+        <a href="">30天无忧退货</a>
+      </li>
+      <li class="police-item">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-right-1"></use>
+        </svg>
+        <a href="">48小时快速退款</a>
+      </li>
     </ul>
   </div>
 </template>
@@ -15,8 +30,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  @import '~style/common/common.styl'
   .home-server-police
-    margin-bottom 10px
     background-color #fff
     .police-group
       display flex
@@ -28,4 +43,6 @@ export default {
         float left
         flex 1
         text-align center
+        svg
+          margin-right 5px
 </style>

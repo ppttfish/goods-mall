@@ -9,5 +9,6 @@ module.exports = {
     config.resolve.alias
       .set('assets', reslove('src/assets'))
       .set('style', reslove('src/assets/styles'))
+      .set('components', reslove('src/components'))
   }
 }

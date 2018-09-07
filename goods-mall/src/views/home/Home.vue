@@ -5,6 +5,7 @@
     <server-police></server-police>
     <recomman-goods></recomman-goods>
     <new-goods></new-goods>
+    <foot-bar></foot-bar>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import homeSwiper from './components/Swiper'
 import ServerPolice from './components/ServerPolice'
 import RecommanGoods from './components/RecommanGoods'
 import NewGoods from './components/NewGoods'
+import FootBar from 'components/FootBar'
 export default {
   name: 'home',
   components: {
@@ -21,7 +23,8 @@ export default {
     homeSwiper,
     ServerPolice,
     RecommanGoods,
-    NewGoods
+    NewGoods,
+    FootBar
   }
 }
 </script>

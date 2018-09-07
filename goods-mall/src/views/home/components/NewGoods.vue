@@ -4,6 +4,9 @@
       <span>新品首发</span>
       <div class="new-goods-more">
         查看全部
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-jiantou1"></use>
+        </svg>
       </div>
     </router-link>
   </div>
@@ -29,6 +32,9 @@ export default {
       font-size 18px
       color #8BA0B6
       .new-goods-more
+        display flex
+        justify-content center
+        align-items center
         width 120px
         height 26px
         line-height 26px

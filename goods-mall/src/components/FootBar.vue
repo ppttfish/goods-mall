@@ -60,5 +60,5 @@ export default {
       span
         display block
         font-size 14px
-        margin-top 5px
+        margin-top 4px
 </style>

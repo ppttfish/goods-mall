@@ -9,11 +9,12 @@
         <li>满88元免邮费</li>
     </ul>
     <div class="cart-content">
-      <div>
+      <div class="cart-content-img">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-gouwuche"></use>
         </svg>
       </div>
+      <div class="cart-content-tips">去添加点什么吧</div>
       <div class="login-btn">登录</div>
     </div>
     <foot-bar></foot-bar>
@@ -56,6 +57,7 @@ export default {
     .cart-content
       position fixed
       display flex
+      flex-direction column
       align-items center
       justify-content center
       left 0
@@ -63,14 +65,23 @@ export default {
       bottom 0
       top 88px
       background-color #f4f4f4
+      .cart-content-img
+        font-size 140px
+        color #c5c5c5
+      .cart-content-tips
+        position relative
+        top -10px
+        margin-bottom 20px
+        font-size 15px
+        color #7f7f7f
       .login-btn
-        width 240px
+        width 260px
         height 50px
         line-height 50px
         font-size 16px
         font-weight 600
         text-align center
-        border-radius 4px
+        border-radius 2px
         color #fff
         background-color #b4282d
 </style>

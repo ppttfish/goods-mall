@@ -18,13 +18,13 @@
       </svg>
       <span>分类</span>
     </router-link>
-    <router-link to="/">
+    <router-link to="/cart">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-gouwuche"></use>
       </svg>
       <span>购物车</span>
     </router-link>
-    <router-link to="/">
+    <router-link to="/user">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-menuIcon-0803"></use>
       </svg>

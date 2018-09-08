@@ -8,6 +8,9 @@
         </a>
         <div>{{ good.name }}</div>
       </li>
+      <li class="good">
+        更多好物
+      </li>
     </ul>
   </div>
 </template>

@@ -68,6 +68,6 @@ export default {
             color #ab2b2b
         .txt
           display block
-          color black
+          color #333
           line-height 1.5
 </style>

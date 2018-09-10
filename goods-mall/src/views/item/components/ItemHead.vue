@@ -24,7 +24,7 @@ export default {
     .item-head
       display flex
       align-items center
-      position fixed
+      position fixed !important
       left 0
       right 0
       top 0
@@ -32,6 +32,7 @@ export default {
       padding 0 18px
       height 48px
       border-bottom 1px solid #f4f4f4
+      background-color #fff
       .item-head-search
         display flex
         justify-content center

@@ -12,7 +12,7 @@
       </svg>
       <span>识物</span>
     </router-link>
-    <router-link to="/">
+    <router-link to="/item">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-wupinfanghangx"></use>
       </svg>

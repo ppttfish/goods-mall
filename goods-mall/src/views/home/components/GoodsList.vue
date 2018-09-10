@@ -5,8 +5,14 @@
       <li v-for="(good, index) of goodsList" :key="index" class="good">
         <a href="">
           <img :src="good.img" alt="">
+          <div class="good-tips">{{ good.info }}</div>
         </a>
         <div>{{ good.name }}</div>
+      </li>
+      <li class="good">
+        <a href="">
+          更多居家好物
+        </a>
       </li>
     </ul>
   </div>
@@ -75,17 +81,28 @@ export default {
       text-align center
       font-size 16px
     .goods-list
+      text-align center
       padding 0 5px
       .good
         display inline-block
         width 48%
         margin-bottom 5px
         box-sizing border-box
-        background-color $goodsbg
         &:nth-child(odd)
-          margin-right 5px
+          margin-right 6px
         a
+          display block
+          border-radius 2px
+          background-color $goodsbg
           img
             width 100%
             height 100%
+          .good-tips
+            padding 12px 5px
+            color #9F8A60
+            background-color #F1ECE2
+            text-overflow ellipsis
+            text-align left
+            overflow hidden
+            white-space nowrap
 </style>

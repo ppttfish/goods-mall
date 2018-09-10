@@ -1,10 +1,11 @@
 <template>
-  <div class="home-goods-list module-botton-style">
+  <div class="home-goods-list">
     <h3 class="goods-title">居家好物</h3>
     <ul class="goods-list">
       <li v-for="(good, index) of goodsList" :key="index" class="good">
         <a href="">
           <img :src="good.img" alt="">
+          <div class="good-tips">{{ item.info }}</div>
         </a>
         <div>{{ good.name }}</div>
       </li>
@@ -72,7 +73,7 @@ export default {
 <style lang="stylus" scoped>
   @import '~style/common/common.styl'
   .home-goods-list
-    margin-bottom 56px
+    background-color #fff
     .goods-title
       line-height 60px
       text-align center
@@ -84,11 +85,15 @@ export default {
         width 48%
         margin-bottom 5px
         box-sizing border-box
-        background-color $goodsbg
         &:nth-child(odd)
-          margin-right 5px
+          margin-right 6px
         a
+          display block
+          position relative
+          background-color $goodsbg
           img
             width 100%
             height 100%
+          .good-tips
+            position absolute
 </style>

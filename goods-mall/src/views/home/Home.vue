@@ -5,8 +5,8 @@
     <server-police></server-police>
     <recomman-goods></recomman-goods>
     <new-goods></new-goods>
-    <foot-bar></foot-bar>
     <goods-list></goods-list>
+    <foot-bar></foot-bar>
   </div>
 </template>
 

@@ -95,16 +95,14 @@ export default {
     .good-list
       .list
         li
-          display inline-block
-          margin-right .6rem
-          width 80px
+          float left
+          width 33.33%
           vertical-align top
-          &:nth-child(3n)
-            margin-right 0
           a
             .img-wrapper
-              width 80px
-              height 80px
+              width 80%
+              height 80%
+              margin auto
               img
                 width 100%
                 height 100%

@@ -4,14 +4,23 @@
     <ul class="goods-list">
       <li v-for="(good, index) of goodsList" :key="index" class="good">
         <a href="">
-          <img :src="good.img" alt="">
-          <div class="good-tips">{{ good.info }}</div>
+          <div class="good-detail">
+            <img :src="good.img" alt="">
+            <div class="good-tips">{{ good.info }}</div>
+          </div>
+          <div class="good-name">{{ good.name }}</div>
+          <div class="good-price">
+            <span>￥</span>
+            <span>{{ good.price }}</span>
+          </div>
         </a>
-        <div>{{ good.name }}</div>
       </li>
-      <li class="good">
+      <li class="good more-good">
         <a href="">
-          更多居家好物
+          <span>更多居家好物</span>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-jiantou2"></use>
+          </svg>
         </a>
       </li>
     </ul>
@@ -81,28 +90,55 @@ export default {
       text-align center
       font-size 16px
     .goods-list
-      text-align center
+      overflow hidden
       padding 0 5px
       .good
-        display inline-block
-        width 48%
+        float left
+        width 50%
         margin-bottom 5px
+        padding 0 3px
         box-sizing border-box
-        &:nth-child(odd)
-          margin-right 6px
         a
-          display block
-          border-radius 2px
-          background-color $goodsbg
-          img
-            width 100%
-            height 100%
-          .good-tips
-            padding 12px 5px
-            color #9F8A60
-            background-color #F1ECE2
-            text-overflow ellipsis
+          .good-detail
+            display block
+            border-radius 2px
+            background-color $goodsbg
+            img
+              width 100%
+              height 100%
+            .good-tips
+              padding 12px 5px
+              color #9F8A60
+              background-color #F1ECE2
+              text-overflow ellipsis
+              text-align left
+              overflow hidden
+              white-space nowrap
+          .good-name
+            margin-top 10px
             text-align left
-            overflow hidden
+            font-size 16px
+            text-overflow ellipsis
             white-space nowrap
+            color #333
+          .good-price
+            line-height 1.5
+            font-size 16px
+            color #b4282d
+            text-align left
+      .more-good
+        height 234px
+        a
+          display flex
+          height 100%
+          flex-direction column
+          justify-content center
+          align-items center
+          font-size 18px
+          color #333
+          background-color $goodsbg
+          svg
+            margin-top 10px
+            color #888
+            font-size 32px
 </style>

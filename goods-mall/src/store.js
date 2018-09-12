@@ -5,10 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
+    pageFlag: 'home'
   },
   mutations: {
-
+    pageChange (state, flag) {
+      state.pageFlag = flag
+    }
   },
   actions: {
 

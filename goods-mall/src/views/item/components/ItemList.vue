@@ -116,4 +116,4 @@ export default {
               color #333
               overflow hidden
               text-overflow ellipsis
-</style> 
+</style>

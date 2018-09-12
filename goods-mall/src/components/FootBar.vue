@@ -1,43 +1,72 @@
 <template>
   <div class="foot-wrapper">
     <div class="foot-navbar">
-      <router-link to="/" class="active">
+      <a
+        :class="{active: this.$store.state.pageFlag === 'home'}"
+        @click="handlePageClick('home')"
+      >
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-zhuye"></use>
         </svg>
         <span>主页</span>
-      </router-link>
-      <router-link to="/">
+      </a>
+      <a
+        :class="{active: this.$store.state.pageFlag === 'topic'}"
+        @click="handlePageClick('topic')"
+      >
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-wupinjicun"></use>
         </svg>
         <span>识物</span>
-      </router-link>
-      <router-link to="/item">
+      </a>
+      <a
+        :class="{active: this.$store.state.pageFlag === 'item'}"
+        @click="handlePageClick('item')"
+      >
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-wupinfanghangx"></use>
         </svg>
         <span>分类</span>
-      </router-link>
-      <router-link to="/cart">
+      </a>
+      <a
+        :class="{active: this.$store.state.pageFlag === 'cart'}"
+        @click="handlePageClick('cart')"
+      >
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-gouwuche"></use>
         </svg>
         <span>购物车</span>
-      </router-link>
-      <router-link to="/user">
+      </a>
+      <a
+        :class="{active: this.$store.state.pageFlag === 'user'}"
+        @click="handlePageClick('user')"
+      >
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-menuIcon-0803"></use>
         </svg>
         <span>我的</span>
-      </router-link>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'FootBar'
+  name: 'FootBar',
+  methods: {
+    handlePageClick (flag) {
+      this.$store.commit('pageChange', flag)
+      if (flag === 'home') {
+        this.$router.push('/')
+        return
+      }
+      if (flag === 'topic') {
+        this.$router.push('/')
+        return
+      }
+      this.$router.push(`/${flag}`)
+    }
+  }
 }
 </script>
 

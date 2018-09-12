@@ -3,12 +3,12 @@
     <div class="user-nav-wrapper">
       <div class="user-nav">
         <router-link to="/">
-          <svg class="icon" aria-hidden="true">
+          <svg @click="handlItemClcik('home')" class="icon" aria-hidden="true">
             <use xlink:href="#icon-zhuye"></use>
           </svg>
         </router-link>
         <router-link to="/" class="nav-logo">
-          <img src="~assets/pic/logo.png" alt="">
+          <img @click="handlItemClcik('home')" src="~assets/pic/logo.png" alt="">
         </router-link>
         <div class="nav-right">
           <router-link class="" to="/serach">
@@ -17,7 +17,7 @@
             </svg>
           </router-link>
           <router-link to="/cart">
-            <svg class="icon" aria-hidden="true">
+            <svg @click="handlItemClcik('cart')" class="icon" aria-hidden="true">
               <use xlink:href="#icon-gouwuche"></use>
             </svg>
           </router-link>
@@ -29,7 +29,12 @@
 
 <script>
 export default {
-  name: 'UserHead'
+  name: 'UserHead',
+  methods: {
+    handlItemClcik (flag) {
+      this.$store.commit('pageChange', flag)
+    }
+  }
 }
 </script>
 

@@ -39,20 +39,20 @@ export default {
   .item-slider
     position fixed
     left 0
-    top 49px
+    top 3.0625rem
     bottom 0
-    width 85px
+    width 5.3125rem
     border-right 1px solid #f4f4f4
     overflow hidden
     background-color #fff
     .item-slider-list
-      padding 25px 0
-      padding-bottom 60px
+      padding 1.5625rem 0
+      padding-bottom 3.75rem
       text-align center
-      font-size 16px
+      font-size 1rem
       li
         &:not(:first-child)
-          margin-top 25px
+          margin-top 1.5625rem
         &.active
           position relative
           &::after

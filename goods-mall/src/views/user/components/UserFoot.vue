@@ -34,15 +34,15 @@ export default {
     position fixed
     left 0
     right 0
-    bottom 40px
+    bottom 2.5rem
     background-color #f4f4f4
     .user-foot-itemlist
       display flex
       align-items center
-      padding 0 80px
+      padding 0 5rem
       .item
         flex-grow 1
-        font-size 16px
+        font-size .875rem
         color #7f7f7f
         text-align center
         &:nth-child(1)
@@ -50,6 +50,6 @@ export default {
         &:nth-child(2)
           border-right 1px solid #7f7f7f
         svg
-          margin-right 5px
-          font-size 20px
+          margin-right .3125rem
+          font-size 1.125rem
 </style>

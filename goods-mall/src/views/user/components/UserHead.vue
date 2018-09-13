@@ -40,19 +40,22 @@ export default {
 
 <style lang="stylus" scoped>
   .user-nav-wrapper
-    height 48px
+    height 2.6875rem
     background-color #fafafa
     .user-nav
       display flex
-      position relative
+      position fixed
+      right 0
+      left 0
+      height 2.6875rem
+      background-color #fafafa
       justify-content space-between
       align-items center
-      height 100%
-      padding 0 10px
-      font-size 18px
+      padding 0 .625rem
+      font-size 1.125rem
+      border-bottom 1px solid #ddd
       svg
-        font-size 28px
-        margin-right 10px
+        font-size 1.625rem
       .nav-logo
         position absolute
         left 0
@@ -60,8 +63,8 @@ export default {
         top 0
         bottom 0
         margin auto
-        width 82px
-        height 25px
+        width 4.875rem
+        height 1.5rem
         img
           width 100%
           height 100%

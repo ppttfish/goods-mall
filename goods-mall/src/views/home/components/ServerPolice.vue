@@ -41,8 +41,14 @@ export default {
       padding 0 12px
       .police-item
         float left
-        flex 1
-        text-align center
+        display flex
+        align-items center
+        width 33.3333%
+        font-size .75rem
+        a
+          color #333
         svg
-          margin-right 5px
+          color #b4282d
+          font-size .875rem
+          margin-right .3125rem
 </style>

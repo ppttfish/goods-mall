@@ -62,23 +62,24 @@ export default {
 <style lang="stylus" scoped>
   @import '~style/common/common.styl'
   .recommand-head
-    padding 20px 0
+    padding 1rem 0
     text-align center
     a
-      font-size 18px
+      font-size 1rem
+      color #333
   .recommand-goods
     .recommand-goods-list
-      padding 0 5px
+      padding 0 .3125rem
       text-align center
       .goods
         display inline-block
         position relative
         width 49%
-        height 120px
-        margin-bottom 5px
+        height 7.5rem
+        margin-bottom .3125rem
         background-color #f4f4f4
         &:nth-child(odd)
-          margin-right 5px
+          margin-right .3125rem
         img
           max-width 100%
           max-height 100%
@@ -86,11 +87,11 @@ export default {
           position absolute
           left 0
           top 0
-          padding-left 5px
-          padding-top 10px
+          padding-left .3125rem
+          padding-top .625rem
           text-align left
-          font-size 15px
+          font-size .9375rem
           color #333
           span
-            font-size 13px
+            font-size .8125rem
 </style>

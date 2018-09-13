@@ -19,7 +19,7 @@ export default {
 
 <style lang="stylus" scoped>
   .item-head-wrapper
-    height 48px
+    height 3rem
     background-color #fff
     .item-head
       display flex
@@ -29,8 +29,8 @@ export default {
       right 0
       top 0
       bottom 0
-      padding 0 18px
-      height 48px
+      padding 0 1.125rem
+      height 3rem
       border-bottom 1px solid #f4f4f4
       background-color #fff
       .item-head-search
@@ -38,13 +38,13 @@ export default {
         justify-content center
         align-items center
         width 100%
-        height 32px
-        border-radius 4px
+        height 2rem
+        border-radius .25rem
         box-sizing border-box
-        font-size 16px
+        font-size 1rem
         color #666
         background-color #ededed
         svg
-          font-size 18px
-          margin-right 5px
+          font-size 1.125rem
+          margin-right 0.3125rem
 </style>

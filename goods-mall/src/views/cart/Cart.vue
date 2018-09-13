@@ -34,16 +34,16 @@ export default {
 <style lang="stylus" scoped>
   .cart
     header
-      height 50px
+      height 2.8125rem
       .cart-head
         position fixed
         left 0
         right 0
         top 0
-        height 50px
-        line-height 50px
+        height 2.8125rem
+        line-height 3rem
         text-align center
-        font-size 20px
+        font-size 1.125rem
         color black
         background-color #fff
         border-bottom 1px solid #ccc
@@ -52,7 +52,8 @@ export default {
       align-items center
       justify-content space-between
       padding 0 20px
-      height 38px
+      height 2.75rem
+      font-size 0.75rem
       background-color #f4f4f4
     .cart-content
       position fixed
@@ -63,22 +64,22 @@ export default {
       left 0
       right 0
       bottom 0
-      top 88px
+      top 5.5rem
       background-color #f4f4f4
       .cart-content-img
-        font-size 140px
+        font-size 8.75rem
         color #c5c5c5
       .cart-content-tips
         position relative
-        top -10px
-        margin-bottom 20px
-        font-size 15px
+        top -0.625rem
+        margin-bottom 1.25rem
+        font-size 0.9375rem
         color #7f7f7f
       .login-btn
-        width 260px
-        height 50px
-        line-height 50px
-        font-size 16px
+        width 16.25rem
+        height 3.125rem
+        line-height 3.125rem
+        font-size 1rem
         font-weight 600
         text-align center
         border-radius 2px

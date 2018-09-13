@@ -56,8 +56,8 @@ export default {
 <style lang="stylus" scoped>
   .home-swiper >>> .swiper-pagination-bullet
     background-color #fff
-    width 22px
-    height 3px
+    width 1.375rem
+    height .1875rem
     border-radius 0
   .home-swiper
     overflow hidden

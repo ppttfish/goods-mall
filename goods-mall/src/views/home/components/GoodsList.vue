@@ -86,59 +86,60 @@ export default {
   .home-goods-list
     background-color #fff
     .goods-title
-      line-height 60px
+      line-height 3.75rem
       text-align center
-      font-size 16px
+      font-size 1rem
     .goods-list
       overflow hidden
-      padding 0 5px
+      padding 0 .3125rem
       .good
         float left
         width 50%
-        margin-bottom 5px
-        padding 0 3px
+        margin-bottom .3125rem
+        padding 0 .1875rem
         box-sizing border-box
         a
           .good-detail
             display block
-            border-radius 2px
+            border-radius .125rem
             background-color $goodsbg
             img
               width 100%
               height 100%
             .good-tips
-              padding 12px 5px
+              padding .75rem .3125rem
               color #9F8A60
               background-color #F1ECE2
               text-overflow ellipsis
               text-align left
+              font-size .75rem
               overflow hidden
               white-space nowrap
           .good-name
-            margin-top 10px
+            margin-top .625rem
             text-align left
             font-size 16px
             text-overflow ellipsis
+            overflow hidden
             white-space nowrap
             color #333
           .good-price
             line-height 1.5
-            font-size 16px
+            font-size 1rem
             color #b4282d
             text-align left
       .more-good
-        height 234px
         a
           display flex
           height 100%
           flex-direction column
           justify-content center
           align-items center
-          font-size 18px
+          font-size 1.125rem
           color #333
           background-color $goodsbg
           svg
-            margin-top 10px
+            margin-top .625rem
             color #888
-            font-size 32px
+            font-size 2rem
 </style>

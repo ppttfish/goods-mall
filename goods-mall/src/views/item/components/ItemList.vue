@@ -78,14 +78,14 @@ export default {
 
 <style lang="stylus" scoped>
   .item-list
-    margin-left 86px
-    padding 15px 15px
+    margin-left 5.375rem
+    padding .9375rem .9375rem
     background-color #fff
     overflow hidden
     .list-banner-wrapper
       overflow hidden
       height 0
-      margin-bottom 20px
+      margin-bottom 1.25rem
       padding-bottom 37%
       background-color #ccc
       .list-banner
@@ -107,10 +107,10 @@ export default {
                 width 100%
                 height 100%
             .name
-              height 36px
-              font-size 14px
+              height 2.25rem
+              font-size .875rem
               text-align center
-              line-height 18px
+              line-height 1.125rem
               color #333
               overflow hidden
               text-overflow ellipsis

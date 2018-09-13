@@ -31,7 +31,8 @@ export default {
 
 <style lang="stylus" scoped>
   .home-nav-wrapper
-    height 73px
+    height 4.375rem
+    // height 4.25rem
     .home-nav
       position fixed
       width 100%
@@ -41,27 +42,29 @@ export default {
         content ''
         position absolute
         width 100%
-        height 1px
+        height 0.0625rem
         bottom 0
         background-color #d9d9d9
       .home-nav-head
         display flex
         align-items center
-        padding 10px 15px
+        padding 0.5rem 0.9375rem
         .home-logo
-          margin-right 10px
+          margin-right 0.625rem
           img
-            width 70px
-            height 20px
+            width 4.375rem
+            height 1.25rem
         .nav-serach
           display flex
           align-items center
           justify-content center
           flex-grow 1
-          height 30px
-          font-size 16px
+          height 1.75rem
+          font-size .875rem
           background-color #ededed
-          border-radius 4px
+          border-radius .25rem
           span
-            margin-left 5px
+            margin-left .3125rem
+          svg
+            font-size 1.125rem
 </style>

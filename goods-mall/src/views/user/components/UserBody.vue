@@ -1,5 +1,5 @@
 <template>
-  <div class="user-body">
+  <div class="user-body" id="user-body">
     <div class="logo-wrapper">
       <img src="~assets/pic/userbody.png" alt="">
     </div>
@@ -28,37 +28,47 @@
 
 <script>
 export default {
-  name: 'UserBody'
+  name: 'UserBody',
+  mounted () {
+    this.adjustBodyHeight()
+  },
+  methods: {
+    adjustBodyHeight() {
+      const ele = document.getElementById('user-body')
+      const height = window.screen.height - 35
+      ele.style.height = height + 'px'
+    }
+  }
 }
 </script>
 
 <style lang="stylus" scoped>
   .user-body
-    height 820px
+    height 51.25rem
     background-color #F2F5F4
     .logo-wrapper
-      padding 88px 0
+      padding 5rem 0
       text-align center
       img
-        width 138px
-        height 48px
+        width 8.625rem
+        height 3rem
     .btn-wrapper
-      padding 0 25px
+      padding 0 1.5625rem
       .btn
         display flex
         justify-content center
         align-items center
-        margin-bottom 15px
+        margin-bottom 0.9375rem
         box-sizing border-box
-        height 50px
+        height 3.125rem
         border 1px solid #b4282d
-        font-size 16px
-        border-radius 2px
+        font-size 1rem
+        border-radius .125rem
         text-align center
         font-weight bold
         svg
-          margin-right 5px
-          font-size 24px
+          margin-right .3125rem
+          font-size 1.5rem
       .phone-btn
         color #fff
         background-color #b4282d
@@ -67,6 +77,6 @@ export default {
         background-color transparent
       .btn-tips
         text-align center
-        font-size 16px
+        font-size 1rem
         color black
 </style>

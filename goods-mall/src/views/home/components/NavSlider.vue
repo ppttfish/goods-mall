@@ -30,27 +30,27 @@ export default {
 <style lang="stylus" scoped>
   .wrapper
     display flex
-    margin 0 15px
+    margin 0 .9375rem
     overflow-x hidden
     white-space nowrap
     .content
       li
         display inline-block
         position relative
-        padding 0 8px
-        line-height 32px
-        font-size 16px
+        padding 0 .4375rem
+        line-height 1.875rem
+        font-size .875rem
         color #333
         text-align center
       .tab
-        margin-left 27px
+        margin-left 1.6875rem
       .active
         color #b4282d
         &::after
           content ''
           position absolute
           width 100%
-          height 3px
+          height .16rem
           left 0
           bottom 0
           background-color #b4282d

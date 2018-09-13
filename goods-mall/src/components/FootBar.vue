@@ -72,7 +72,8 @@ export default {
 
 <style lang="stylus" scoped>
   .foot-wrapper
-    height 55px
+    // height 48px
+    height 3rem
     background-color #fff
     .foot-navbar
       display flex
@@ -80,19 +81,24 @@ export default {
       justify-content space-around
       position fixed
       width 100%
-      height 55px
+      // height 48px
+      height 3rem
       left 0
       bottom 0
       background-color #fafafa
       border-top: 1px solid #d9d9d9
+      z-index 1
       a
         text-align center
         &.active
           color #b4282d
         svg
-          font-size 22px
+          // font-size 20px
+          font-size 1.25rem
         span
           display block
-          font-size 14px
-          margin-top 4px
+          // font-size 12px
+          font-size .75rem
+          // margin-top 4px
+          margin-top .125rem
 </style>

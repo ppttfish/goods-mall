@@ -33,7 +33,7 @@ export default {
     this.adjustBodyHeight()
   },
   methods: {
-    adjustBodyHeight() {
+    adjustBodyHeight () {
       const ele = document.getElementById('user-body')
       const height = window.screen.height - 35
       ele.style.height = height + 'px'

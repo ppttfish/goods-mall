@@ -42,7 +42,7 @@ export default {
         content ''
         position absolute
         width 100%
-        height 0.0625rem
+        height 1px
         bottom 0
         background-color #d9d9d9
       .home-nav-head

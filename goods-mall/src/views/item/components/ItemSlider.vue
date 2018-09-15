@@ -1,8 +1,13 @@
 <template>
   <div class="item-slider wrapper" ref="wrapper">
     <ul class="item-slider-list content">
-      <li v-for="(item, index) of itemList" :key="index">
-        <a class="txt" href="">{{ item }}</a>
+      <li
+      v-for="(item, index) of itemList"
+      :key="item.id"
+      :class="{ active: activeFlag === index}"
+      @click="hanldItemClick(index)"
+      >
+        <a class="txt">{{ item.name }}</a>
       </li>
     </ul>
   </div>
@@ -12,12 +17,13 @@
 import BScroll from 'better-scroll'
 export default {
   name: 'ItemSlider',
-  data () {
-    return {
-      itemList: [
-        '推荐专区', '爆品区', '秋季专区', '居家', '鞋包配饰', '服装', '电器', '洗护', '饮食',
-        '餐厨', '婴童', '文体', '特色区'
-      ]
+  props: {
+    itemList: Array,
+    activeFlag: Number
+  },
+  methods: {
+    hanldItemClick (index) {
+      this.$emit('itemIndex', index)
     }
   },
   mounted () {

@@ -10,5 +10,13 @@ module.exports = {
       .set('assets', reslove('src/assets'))
       .set('style', reslove('src/assets/styles'))
       .set('components', reslove('src/components'))
+  },
+  // 代理端口，解决跨域问题
+  devServer: {
+    proxy: {
+      '/item': {
+        target: 'http://localhost:3001'
+      }
+    }
   }
 }

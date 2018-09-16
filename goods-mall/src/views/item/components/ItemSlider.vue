@@ -33,7 +33,8 @@ export default {
           bottom: true,
           left: false,
           right: false
-        }
+        },
+        click: true
       })
     })
   }
@@ -50,6 +51,7 @@ export default {
     border-right 1px solid #f4f4f4
     overflow hidden
     background-color #fff
+    z-index 1
     .item-slider-list
       padding 1.5625rem 0
       padding-bottom 3.75rem

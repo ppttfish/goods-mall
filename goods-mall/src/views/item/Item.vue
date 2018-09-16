@@ -40,8 +40,8 @@ export default {
   mounted () {
     axios.get('/item')
       .then(res => {
-        this.itemList = res.data.data
-        
+        this.itemList = res.data.res.data
+        console.log(res.data.res.data)
         this.goodList = {
           bannerImg: this.itemList[0].bannerImg,
           items: this.itemList[0].items

@@ -4,9 +4,11 @@
     <ul class="goods-list">
       <li v-for="(good, index) of goodsList" :key="index" class="good">
         <a href="">
-          <div class="good-detail">
-            <img :src="good.img" alt="">
-            <div class="good-tips">{{ good.info }}</div>
+          <div class="good-wrapper">
+            <div class="good-detail">
+              <img v-lazy="good.img" alt="">
+              <div class="good-tips">{{ good.info }}</div>
+            </div>
           </div>
           <div class="good-name">{{ good.name }}</div>
           <div class="good-price">
@@ -99,22 +101,32 @@ export default {
         padding 0 .1875rem
         box-sizing border-box
         a
-          .good-detail
-            display block
-            border-radius .125rem
-            background-color $goodsbg
-            img
-              width 100%
-              height 100%
-            .good-tips
-              padding .75rem .3125rem
-              color #9F8A60
-              background-color #F1ECE2
-              text-overflow ellipsis
-              text-align left
-              font-size .75rem
-              overflow hidden
-              white-space nowrap
+          .good-wrapper
+            position relative
+            overflow hidden
+            height 0
+            padding-bottom 120%
+            background-color #ccc
+            .good-detail
+              display block
+              border-radius .125rem
+              background-color $goodsbg
+              img
+                width 100%
+                height 100%
+              .good-tips
+                position absolute
+                bottom 0
+                right 0
+                left 0
+                padding .75rem .3125rem
+                color #9F8A60
+                background-color #F1ECE2
+                text-overflow ellipsis
+                text-align left
+                font-size .75rem
+                overflow hidden
+                white-space nowrap
           .good-name
             margin-top .625rem
             text-align left

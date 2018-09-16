@@ -11,16 +11,20 @@
     <div class="recommand-goods">
       <ul class="recommand-goods-list">
         <li class="goods" v-for="(item, index) of goodsList" :key="index">
-          <router-link to="/">
-            <div class="content">
-              <h4 class="title">{{ item.name }}</h4>
-              <h4>
-                {{ item.price }}
-                <span>元起</span>
-              </h4>
-            </div>
-            <img :src="item.url" alt="">
-          </router-link>
+          <div class="goods-wrapper">
+            <router-link to="/">
+              <div class="content">
+                <h4 class="title">{{ item.name }}</h4>
+                <h4>
+                  {{ item.price }}
+                  <span>元起</span>
+                </h4>
+              </div>
+              <div>
+                <img :src="item.url" alt="">
+              </div>
+            </router-link>
+          </div>
         </li>
       </ul>
     </div>
@@ -78,6 +82,10 @@ export default {
         height 7.5rem
         margin-bottom .3125rem
         background-color #f4f4f4
+        .good-wrapper
+          overflow: hidden
+          height: 0
+          padding-bottom: 64%
         &:nth-child(odd)
           margin-right .3125rem
         img

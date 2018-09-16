@@ -53,8 +53,8 @@ export default {
           vertical-align top
           a
             .img-wrapper
-              width 80%
-              height 80%
+              width 4rem
+              height 4rem
               margin auto
               img
                 width 100%

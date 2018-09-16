@@ -5,9 +5,8 @@
       v-for="(item, index) of itemList"
       :key="item.id"
       :class="{ active: activeFlag === index}"
-      @click="hanldItemClick(index)"
       >
-        <a class="txt">{{ item.name }}</a>
+        <a class="txt" @click="hanldItemClick(index)">{{ item.name }}</a>
       </li>
     </ul>
   </div>
@@ -75,5 +74,5 @@ export default {
         .txt
           display block
           color #333
-          line-height 1.5
+          line-height 1.8
 </style>

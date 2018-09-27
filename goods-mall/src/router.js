@@ -4,6 +4,7 @@ import Home from './views/home/Home.vue'
 import Cart from './views/cart/Cart.vue'
 import User from './views/user/User.vue'
 import Item from './views/item/Item.vue'
+import Topic from './views/topic/Topic.vue'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/item',
       name: 'item',
       component: Item
+    },
+    {
+      path: '/topic',
+      name: 'topic',
+      component: Topic
     }
   ]
 })

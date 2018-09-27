@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import UserHead from './components/UserHead.vue'
+import UserHead from 'components/UserHead.vue'
 import UserBody from './components/UserBody.vue'
 import UserFoot from './components/UserFoot.vue'
 export default {

@@ -60,10 +60,6 @@ export default {
         this.$router.push('/')
         return
       }
-      if (flag === 'topic') {
-        this.$router.push('/')
-        return
-      }
       this.$router.push(`/${flag}`)
     }
   }
